@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  tempLogin
+//  WorldTrotter
 //
-//  Created by Alfonso Torres on 9/25/17.
+//  Created by Alfonso Torres on 10/3/17.
 //  Copyright © 2017 Alfonso Torres. All rights reserved.
 //
 
