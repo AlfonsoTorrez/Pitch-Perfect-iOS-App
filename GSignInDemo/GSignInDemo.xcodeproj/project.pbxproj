@@ -15,6 +15,7 @@
 		22611FDF1F9E4605005E850D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22611FDE1F9E4605005E850D /* Assets.xcassets */; };
 		22611FE21F9E4605005E850D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22611FE01F9E4605005E850D /* LaunchScreen.storyboard */; };
 		22A212061F9FFD1B00901776 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22A212051F9FFD1B00901776 /* GoogleService-Info.plist */; };
+		22A212081FA0093700901776 /* SignedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A212071FA0093700901776 /* SignedInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		22611FE11F9E4605005E850D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22611FE31F9E4605005E850D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22A212051F9FFD1B00901776 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		22A212071FA0093700901776 /* SignedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInViewController.swift; sourceTree = "<group>"; };
 		38205E502AEA30C23FBD9D89 /* Pods-GSignInDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSignInDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GSignInDemo/Pods-GSignInDemo.release.xcconfig"; sourceTree = "<group>"; };
 		AC5B15B8885658EA91E2986D /* Pods-GSignInDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSignInDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GSignInDemo/Pods-GSignInDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C68552B94610D60AE790C2F7 /* Pods_GSignInDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GSignInDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,7 @@
 			children = (
 				22611FD41F9E4605005E850D /* AppDelegate.swift */,
 				22611FD61F9E4605005E850D /* ViewController.swift */,
+				22A212071FA0093700901776 /* SignedInViewController.swift */,
 				22611FD81F9E4605005E850D /* Main.storyboard */,
 				22611FDE1F9E4605005E850D /* Assets.xcassets */,
 				22611FE01F9E4605005E850D /* LaunchScreen.storyboard */,
@@ -234,6 +237,7 @@
 				22611FDD1F9E4605005E850D /* GSignInDemo.xcdatamodeld in Sources */,
 				22611FD71F9E4605005E850D /* ViewController.swift in Sources */,
 				22611FD51F9E4605005E850D /* AppDelegate.swift in Sources */,
+				22A212081FA0093700901776 /* SignedInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

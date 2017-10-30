@@ -1,25 +1,19 @@
 //
 //  AppDelegate.swift
-//  GSignInDemo
+//  Demo3
 //
-//  Created by Alfonso Torres on 10/23/17.
+//  Created by Alfonso Torres on 10/25/17.
 //  Copyright © 2017 Alfonso Torres. All rights reserved.
 //
 
 import UIKit
 import CoreData
-import Google
-import GoogleSignIn
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate{
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-    //this function is added only
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        return GIDSignIn.sharedInstance().handle(url as URL!,sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
-    }
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -59,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "GSignInDemo")
+        let container = NSPersistentContainer(name: "Demo3")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

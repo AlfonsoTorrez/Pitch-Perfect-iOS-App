@@ -12,8 +12,16 @@ import GoogleSignIn
 
 class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
     //Label will be used to see the users email
-    @IBOutlet weak var emailLabel: UILabel!
-    
+    var name = String()
+    var email = String()
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let bruh = segue.destination as? SignedInViewController
+        print(name)
+        print(email)
+        bruh?.name = name
+        bruh?.email = email
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         //error object
@@ -45,11 +53,12 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
             print(error ?? "google error")
             return
         }
+        name = user.profile.name
+        email = user.profile.email
         
-        //if success display the email on label
-        emailLabel.text = user.profile.email
+        performSegue(withIdentifier: "GSI", sender: self)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
