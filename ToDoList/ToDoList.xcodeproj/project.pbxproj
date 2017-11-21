@@ -15,6 +15,7 @@
 		2239D0021F91ADBE00163AD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2239D0001F91ADBE00163AD2 /* LaunchScreen.storyboard */; };
 		2239D00D1F91ADBE00163AD2 /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2239D00C1F91ADBE00163AD2 /* ToDoListTests.swift */; };
 		2239D0181F91ADBE00163AD2 /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2239D0171F91ADBE00163AD2 /* ToDoListUITests.swift */; };
+		22A54F5F1FAA2B1300687142 /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A54F5E1FAA2B1300687142 /* NewNoteViewController.swift */; };
 		B24E0A4C2B71E33D2AD0FE0D /* Pods_ToDoListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3817AC2D19773F4232DFB121 /* Pods_ToDoListTests.framework */; };
 		D46C2990F3A6F7E4032AD0C1 /* Pods_ToDoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77DF975BFDD31146D4586FE /* Pods_ToDoList.framework */; };
 		E1A048FC024DC226014E9505 /* Pods_ToDoListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39E137077004D905D1053107 /* Pods_ToDoListUITests.framework */; };
@@ -52,6 +53,7 @@
 		2239D0131F91ADBE00163AD2 /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2239D0171F91ADBE00163AD2 /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		2239D0191F91ADBE00163AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A54F5E1FAA2B1300687142 /* NewNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
 		23D67A383088C131D318E530 /* Pods-ToDoListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoListTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoListTests/Pods-ToDoListTests.release.xcconfig"; sourceTree = "<group>"; };
 		2B0F94B29D3E301B80DD5FD6 /* Pods-ToDoListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoListUITests/Pods-ToDoListUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3817AC2D19773F4232DFB121 /* Pods_ToDoListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				2239CFF41F91ADBE00163AD2 /* AppDelegate.swift */,
+				22A54F5E1FAA2B1300687142 /* NewNoteViewController.swift */,
 				2239CFF61F91ADBE00163AD2 /* ViewController.swift */,
 				2239CFF81F91ADBE00163AD2 /* Main.storyboard */,
 				2239CFFE1F91ADBE00163AD2 /* Assets.xcassets */,
@@ -446,18 +449,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ToDoList/Pods-ToDoList-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/TB/TB.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TB.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2239CFF71F91ADBE00163AD2 /* ViewController.swift in Sources */,
+				22A54F5F1FAA2B1300687142 /* NewNoteViewController.swift in Sources */,
 				2239CFFD1F91ADBE00163AD2 /* ToDoList.xcdatamodeld in Sources */,
 				2239CFF51F91ADBE00163AD2 /* AppDelegate.swift in Sources */,
 			);

@@ -6,10 +6,8 @@ target 'ToDoList' do
   use_frameworks!
 
   # Pods for ToDoList 
-  pod "IQKeyboardManagerSwift"
   pod 'TB', :git => ‘https://github.com/AlfonsoTorrez/ToolBox.git’
-  pod 'Google/SignIn' 
-
+  pod ‘RealmSwift’
   target 'ToDoListTests' do
     inherit! :search_paths
     # Pods for testing
