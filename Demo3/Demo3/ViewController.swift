@@ -1,38 +1,66 @@
 //
-//
-//Dispatch to a method on a background queue that takes a closure as an argument
-//  The method should make a call to a web service API **DONE**
-//  The web service API should both send and receive JSON
-//  The web service API key should be stored in the keychain 
-//  In the closure, dispatch back to the main thread and update the UI
-//  Show an indicator of when the app is connected to your web service and when it is not
-//  Use a closure as a property on a table cell to get information while the UITableView is being constructed
-//  Use app settings to store some configuration available to the user
-//  Make sure all settings have defaults that are set (see my examples)
-//  Make sure you have at least one piece of PII and store PII in the keychain.
-//
 //  ViewController.swift
 //  Demo3
 //
-//  Created by Alfonso Torres on 10/25/17.
+//  Created by Alfonso Torres on 12/20/17.
 //  Copyright © 2017 Alfonso Torres. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    var heroes = [HeroStats]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let weather = WeatherGetter()
-        weather.getWeather(city: "Tracy")
+        downloadJSON {
+            //print("Successful")
+            self.tableView.reloadData()
+        }
+        tableView.delegate = self
+        tableView.dataSource = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return heroes.count
     }
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        cell.textLabel?.text = heroes[indexPath.row].localized_name.capitalized
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showDetails", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? HeroViewController{
+            destination.hero = heroes[(tableView.indexPathForSelectedRow?.row)!]
+        }
+    }
+    
+    func downloadJSON(completed: @escaping ()->()){
+        let url = URL(string: "https://api.opendota.com/api/heroStats")
+        
+        URLSession.shared.dataTask(with: url!){(data, response, error)in
+            if error == nil{
+                do{
+                    self.heroes = try JSONDecoder().decode([HeroStats].self, from: data!)
+                    
+                    DispatchQueue.main.async {
+                        completed()
+                    }
+                }catch{
+                    print("JSON Error")
+                }
+            }
+        }.resume()
+    }
 
 }
 

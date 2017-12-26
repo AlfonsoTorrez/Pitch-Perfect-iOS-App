@@ -1,0 +1,23 @@
+{
+  "name": "iOSAppToolBox",
+  "version": "1.0.0",
+  "summary": "Useful methods for kickstarting iOS Apps.",
+  "description": "Useful methods for kickstarting iOS Apps. Install library into project, in order to use commonly used methods.",
+  "homepage": "https://github.com/AlfonsoTorrez/iOSAppToolBox",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "AlfonsoTorrez": "alftorres@csumb.edu"
+  },
+  "source": {
+    "git": "https://github.com/AlfonsoTorrez/iOSAppToolBox.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "iOSAppToolBox/Classes/**/*",
+  "frameworks": "UIKit"
+}

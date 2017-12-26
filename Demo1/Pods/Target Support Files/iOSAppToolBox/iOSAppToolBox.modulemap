@@ -1,0 +1,6 @@
+framework module iOSAppToolBox {
+  umbrella header "iOSAppToolBox-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,12 +7,13 @@
 //
 
 import UIKit
-
+import iOSAppToolBox
 class ChangeViewController: UIViewController {
     @IBOutlet weak var changeTF: UITextField!
     var count = false
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
     }
 
     override func didReceiveMemoryWarning() {
