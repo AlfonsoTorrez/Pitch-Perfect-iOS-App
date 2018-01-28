@@ -21,3 +21,11 @@ Brief descriptions of the applications I have been working on. Full descriptions
 ### Demo 4 - Simple List Application
 + The application is used to save small messages on table view cells.
 + It used core data to store the messages, in order for them to be saved without them being deleted when the user exits the app.
+
+### Pitch Perfect - Udacity Application
++ 
++ 
+
+### HighFive - Achievements Application 
++ 
++ 
