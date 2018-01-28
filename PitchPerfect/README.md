@@ -13,6 +13,6 @@ This application serves as a introduction to Xcode and the Swift coding language
 ![Homepage View Controller](https://photos.google.com/u/1/photo/AF1QipOxMrGUP983pKTy1CVT5zU0XJY3En49yPoX4LGS)
 
 ![Voice Modifier View Controller][logo]
-[logo]: https://photos.app.goo.gl/pe7UIyuMvCP2Qo083
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
 
 
