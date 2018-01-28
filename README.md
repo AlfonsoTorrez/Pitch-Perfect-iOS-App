@@ -5,11 +5,19 @@ The purpose of this repository is to keep track of all the applications that I h
 Brief descriptions of the applications I have been working on. Full descriptions and pictures can be found inside each app’s README.md file. 
 
 
-### Demo 1
+### Demo 1 - Single Segue Application
 + My first iOS application which contained a simple segue that allowed a user to change the text on a label.
 + Created a small cocoa pod that included swift code that hid the keyboard. 
 
-### Demo 2 
+### Demo 2 - Country Flags Application
 + Application consisted in the use of a navigation controller and a table view.
 + The table view listed a few names of countries. When clicked they will take the user into a separate view controller to see their flags. 
 
+### Demo 3 - DOTA API Application
++ Created an application that used a DOTA (Online game) API .
++ The name of the characters from DOTA appear on a table view. Selecting on the table view cells will allow the user to see more information about the characters. 
+
+
+### Demo 4 - 
++
++ 
