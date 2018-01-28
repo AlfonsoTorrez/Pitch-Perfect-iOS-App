@@ -18,6 +18,6 @@ Brief descriptions of the applications I have been working on. Full descriptions
 + The name of the characters from DOTA appear on a table view. Selecting on the table view cells will allow the user to see more information about the characters. 
 
 
-### Demo 4 - 
-+
-+ 
+### Demo 4 - Simple List Application
++ The application is used to save small messages on table view cells.
++ It used core data to store the messages, in order for them to be saved without them being deleted when the user exits the app.
