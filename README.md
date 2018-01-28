@@ -6,5 +6,10 @@ Brief descriptions of the applications I have been working on. Full descriptions
 
 
 ### Demo 1
++ My first iOS application which contained a simple segue that allowed a user to change the text on a label.
++ Created a small cocoa pod that included swift code that hid the keyboard. 
 
+### Demo 2 
++ Application consisted in the use of a navigation controller and a table view.
++ The table view listed a few names of countries and when clicked on they would take you to a separate view controller to see    their flags. 
 
