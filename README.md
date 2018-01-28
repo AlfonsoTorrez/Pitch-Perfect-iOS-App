@@ -29,7 +29,7 @@ Brief descriptions of the applications I have been working on. Full descriptions
 ### Pitch Perfect - Udacity Application
 + Application will lets users record their voice and have it be played in different ways.
 + I was able to create this application with the help of Udacity’s course on “Intro to iOS App Development with Swift”. 
-+ Course Link: <https://www.udacity.com/course/how-to-make-an-ios-app--ud607>
++ Course Link: <https://www.udacity.com/course/intro-to-ios-app-development-with-swift--ud585>
 + Link: <https://github.com/AlfonsoTorrez/iOSDevelopment/tree/master/PitchPerfect>
 
 ### HighFive - Achievements Application 
