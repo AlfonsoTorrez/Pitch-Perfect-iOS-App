@@ -8,6 +8,7 @@ Brief descriptions of the applications I have been working on. Full descriptions
 ### Demo 1 - Single Segue Application
 + My first iOS application which contained a simple segue that allowed a user to change the text on a label.
 + Created a small cocoa pod that included swift code that hid the keyboard. 
++ Cocoa Pod Link: <https://github.com/AlfonsoTorrez/iOSAppToolBox>
 + Link: <https://github.com/AlfonsoTorrez/iOSDevelopment/tree/master/Demo1>
 
 ### Demo 2 - Country Flags Application
@@ -28,7 +29,9 @@ Brief descriptions of the applications I have been working on. Full descriptions
 ### Pitch Perfect - Udacity Application
 + 
 + 
++
 
 ### HighFive - Achievements Application 
 + 
 + 
++
