@@ -11,6 +11,7 @@ This application serves as a introduction to Xcode and the Swift coding language
 
 ### App Screenshots
 ![Homepage View Controller](http://i64.tinypic.com/111mknl.png)
++ The image above is the homepage view controller of PitchPerfect. It contains a record and stop UIButton. The label between the the two buttons will change once one of the buttons is clicked on. Once the user is done record they will click on the stop button which will move them into the next view controller. 
 
 ![Voice Modifier View Controller](http://i68.tinypic.com/2cyfmlk.png)
 
