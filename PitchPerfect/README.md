@@ -12,6 +12,6 @@ This application serves as a introduction to Xcode and the Swift coding language
 ### App Screenshots
 ![Homepage View Controller](https://photos.google.com/u/1/photo/AF1QipOxMrGUP983pKTy1CVT5zU0XJY3En49yPoX4LGS)
 
-![Voice Modifier View Controller](https://photos.google.com/u/1/photo/AF1QipPu8lDbwj_EvjGSyVL_X3Oop_bML-Q_D-MmLkXB)
+![Voice Modifier View Controller](https://photos.app.goo.gl/O8FpcqUzCH3eZoRT2)
 
 
