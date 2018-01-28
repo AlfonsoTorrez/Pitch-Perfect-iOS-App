@@ -27,11 +27,12 @@ Brief descriptions of the applications I have been working on. Full descriptions
 + Link: <https://github.com/AlfonsoTorrez/iOSDevelopment/tree/master/Demo4>
 
 ### Pitch Perfect - Udacity Application
-+ 
-+ 
-+
++ Application will lets users record their voice and have it be played in different ways.
++ I was able to create this application with the help of Udacity’s course on “Intro to iOS App Development with Swift”. 
++ Course Link: <https://www.udacity.com/course/how-to-make-an-ios-app--ud607>
++ Link: <https://github.com/AlfonsoTorrez/iOSDevelopment/tree/master/PitchPerfect>
 
 ### HighFive - Achievements Application 
-+ 
-+ 
-+
++ An ongoing application that will let users announce when they have completed an achievement. Once the user has made their announcement another user will find them and give them a high five.
++ The application will use the following functions: gps location, profile creation, and others if needed. 
++ Link: <https://github.com/AlfonsoTorrez/iOSDevelopment/tree/master/HighFive>
